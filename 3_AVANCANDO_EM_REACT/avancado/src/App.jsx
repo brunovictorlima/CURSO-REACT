@@ -9,6 +9,7 @@ import ManageData from "./components/ManageData";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragment from "./components/Fragment";
+import Container from "./components/Container";
 
 function App() {
   // const name = "Joaquim"; //podemos passar por props, um valor, uma variável, um state, etc.
@@ -54,6 +55,13 @@ function App() {
       ))}
       {/* fragment */}
       <Fragment propFragment="teste" />
+      {/* children */}
+      <Container myValue="teste">
+        <p>E este é o conteúdo</p>
+      </Container>
+      <Container myValue="teste2">
+        <h5>Testando o container</h5>
+      </Container>
     </>
   );
 }
