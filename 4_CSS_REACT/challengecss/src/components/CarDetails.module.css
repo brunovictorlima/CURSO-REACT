@@ -1,0 +1,17 @@
+body {
+  width: 300px;
+  height: auto;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  background-color: blueviolet;
+}
+
+li {
+  color: greenyellow;
+}
