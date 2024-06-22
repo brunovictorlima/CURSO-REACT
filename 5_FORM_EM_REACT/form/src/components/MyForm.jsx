@@ -11,13 +11,20 @@ const MyForm = () => {
     setName(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault(); // preventDefault para o page reload de um formulário padrão.
+    console.log("Enviando o formulário!");
+    console.log(name, email);
+  };
+
   console.log(name);
   console.log(email);
 
   return (
     <div>
+      {/* 5 - envio de form */}
       {/* 1 - criação de form */}
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Nome:</label>
           <input
@@ -30,6 +37,7 @@ const MyForm = () => {
         {/* 2 - label envolvendo input */}
         <label>
           <span>E-mail:</span>
+          {/* 4 - Simplificação de manipulação de state */}
           <input
             type="email"
             name="email"
