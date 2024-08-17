@@ -14,3 +14,11 @@ form input {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+li > button {
+  margin-left: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
