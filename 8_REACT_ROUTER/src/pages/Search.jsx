@@ -1,5 +1,5 @@
 import { useSearchParams, Link } from "react-router-dom";
-import { useFetch } from "../hooks/useFetch";
+import useFetch from "../hooks/useFetch";
 
 const Search = () => {
   const [searchParams] = useSearchParams();
@@ -11,7 +11,6 @@ const Search = () => {
   return (
     <div>
       <h1>Resultados disponíveis</h1>
-      {/* DESCOBRIR O PQ DO ERRO DE RENDERIZAÇÃO */}
       <ul className="products">
         {items &&
           items.map((item) => (
